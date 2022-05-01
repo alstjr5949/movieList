@@ -90,7 +90,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -144,6 +144,11 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .ir {
   display: block;
   overflow: hidden;
@@ -154,14 +159,28 @@ button {
   color: transparent;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  width: 106rem;
+  margin: 8.6rem;
+  background-color: #f2f2f2;
 }
 /*# sourceMappingURL=style.css.map */

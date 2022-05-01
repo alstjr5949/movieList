@@ -3,8 +3,18 @@
 @import "variables";
 @import "mixin";
 
+html {
+  font-size: 10px;
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  @include center-x;
+  @include column-center-x;
+}
+
+.wrapper {
+  width: 106rem;
+  margin: 8.6rem;
+  background-color: #f2f2f2;
 }
