@@ -10,11 +10,59 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  @include column-center-x;
 }
 
 .wrapper {
   width: 106rem;
   margin: 8.6rem;
   background-color: #f2f2f2;
+  margin: 8.6rem auto 0;
+  border: 0.2rem solid #bdbdbd;
+  border-radius: 1.5rem;
+}
+
+.header {
+  font-family: "Roboto";
+  font-style: normal;
+  text-align: center;
+  color: #000;
+  .title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    padding: 4rem;
+    border-bottom: 0.2rem solid #bdbdbd;
+    margin: 0 20.3rem;
+  }
+  .nav {
+    margin: 2.8rem 0;
+    .navListBox {
+      display: flex;
+      justify-content: space-between;
+      width: 37.2rem;
+      margin: 0 auto;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #828282;
+      .navList {
+        cursor: pointer;
+        &:nth-of-type(1) {
+          color: #000000;
+          font-weight: 900;
+        }
+        &:hover {
+          color: #000000;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  padding: 0 2.8rem 3rem;
 }
