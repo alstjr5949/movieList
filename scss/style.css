@@ -324,49 +324,55 @@ body {
   margin-right: 7rem;
 }
 
-.main .movieListBox .movieButton {
+.main .movieListBox .movieButtonWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  float: left;
   font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  margin-top: 1.3rem;
-  padding: 1rem 0;
-  background-color: #f2f2f2;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background: #f2f2f2;
+  margin: 1.8rem -1.9rem 0;
   border-top: 1px solid #bdbdbd;
 }
 
-.main .movieListBox .movieButton.bookButton {
-  width: 10.7rem;
-  margin-left: -1.9rem;
+.main .movieListBox .movieButtonWrapper .movieButton {
+  padding: 1rem 2.7rem;
+  text-align: center;
 }
 
-.main .movieListBox .movieButton.previewButton {
-  float: right;
-  width: 11.3rem;
-  margin-right: -2.1rem;
-  border-left: 1px solid #bdbdbd;
+.main .movieListBox .movieButtonWrapper .movieButton.bookButton {
+  border-right: 1px solid #bdbdbd;
 }
 
-.main .movieListBox .movieButton.previewButton::before {
+.main .movieListBox .movieButtonWrapper .movieButton.previewButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .movieListBox .movieButtonWrapper .movieButton.previewButton::before {
   content: " ";
   width: 1.6rem;
   height: 1.6rem;
   background-image: url(../images/아이콘_재생.png);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0.2rem 0.2rem 0;
+  background-size: cover;
+  display: block;
+  margin: 0 0.3rem 0.2rem 0;
 }
 
 .footer {
   width: 100vw;
+  min-width: 119rem;
   background-color: #f2f2f2;
 }
 
@@ -432,7 +438,7 @@ body {
 }
 
 .footer .footerWrapper .infoSection .corpInfo dd {
-  font-weight: 500;
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
